@@ -175,8 +175,7 @@ function tempMinandMax(data){
     minTemp.innerText = '18°C';//`${temperature_min}°C`;
 }
 
-btn.addEventListener('click',(evt)=>{
-    evt.preventDefault();
+function inputValueRetreive(){
     const input = document.querySelector('form input');
     text.style.color = '#754E1A'
     const city = input.value.trim();
@@ -188,6 +187,14 @@ btn.addEventListener('click',(evt)=>{
         text.innerText = 'Please enter a city name';
         text.style.color = 'red';
     }
+}
+window.addEventListener('load',()=>{
+    inputValueRetreive();
+})
+
+btn.addEventListener('click',(evt)=>{
+    evt.preventDefault();
+    inputValueRetreive()
 });
 
 
