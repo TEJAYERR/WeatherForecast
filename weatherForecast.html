@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/weatherForecast.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Weather Forecast</h2>
+        <form action="">
+            <label for="city">Enter City Name :</label>
+            <input type="text" value="india" placeholder="CITY-NAME">
+            <button class="btn">submit</button>
+        </form>
+        <h3 class="city-name"></h3>
+        <p class="text"></p>
+        <div class="loading-indicator"></div>
+        <main>
+            <div class="box-container"> 
+                <div class="temperature box">Temperature 
+                    <br>
+                    <img src="" alt="temp">
+                    <br>
+                    <p class="degree"></p>
+                    <br>
+                    <b id="description"></b>
+                </div>
+                <div class="humidity box">Humidity 
+                    <br>
+                    <img src="" alt="humidity">
+                    <br>
+                    <p class="humidity-level"></p>
+                    <br>
+                    <b id="description"></b>
+                </div>
+                <div class="pressure box">Pressure 
+                    <br>
+                    <img src="../img/pressure.svg" alt="pressure">
+                    <br>
+                    <p class="pressure-level"></p>
+                    <br>
+                    <b id="description"></b>
+                </div>
+                <div class="wind box">Wind 
+                    <br>
+                    <img src="../img/wind.svg" alt="wind">
+                    <br>
+                    <p class="wind-properties"></p>
+                </div>
+                <div class="temp-max box">Temp-Max 
+                    <br>
+                    <img src="../img/sun-max-fill.svg" alt="tempMax">
+                    <br>
+                    <p class="maxDegree"></p>
+                </div>
+                <div class="temp-min box">Temp-Min 
+                    <br>
+                    <img src="../img/sun-min-fill.svg" alt="tempMin">
+                    <br>
+                    <p class="minDegree"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/weatherForecast.js"></script>
+</body>
+</html>

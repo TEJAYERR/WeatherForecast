@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: slategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: white;
+    width: 50vw;
+    min-width: 45vh;
+    padding: 3.54rem;
+    border-radius: 0.5rem;
+}
+form{
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+form input, button{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+form input{
+    border: 1px solid slategray;
+    padding: 0.6rem;
+    margin: 0.9rem 0;
+}
+form button{
+    width: 70%;
+    padding: 0.74rem;
+    margin: 0 auto;
+    border: 1px solid slategray;
+}
+main{
+    display: none;
+}
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+}
+.box{
+    background-color: slategray;
+    color: white;
+    width: 29%;
+    /* min-height: 20vh; */
+    max-height: 35vh;
+    border-radius: 0.98rem;
+    margin-bottom: 1rem;
+    padding: 0.7rem 0.2rem;
+    font-size: 14px;
+    /* display: none; */
+}
+img{
+    min-width: 3rem;
+    height: 2.7rem;
+    background-color: #9AA6B2;
+    border-radius: 1rem;
+    margin: 0.74rem 0;
+}
+.text{
+    text-align: center;
+    color: #754E1A;
+    margin: 1rem 0;
+    font-size: 12px;
+}
+.degree{
+    color: white;
+
+}
+h3{
+    text-align: center;
+}
+.loading-indicator{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid slategray;
+    border-bottom: 4px solid white;
+    animation: spin 1s linear infinite;
+    /* position: relative; */
+    /* left: 45%; */
+    display: none;
+    margin: 0 auto;
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@media screen and (max-width:760px) {
+    .container{
+        padding: 5rem;
+    }
+    h2{
+        text-align: center;
+    }
+}
+@media screen and (max-width:1000px) {
+    .container{
+        padding: 3rem;
+    }
+    h2{
+        text-align: center;
+    }
+}
