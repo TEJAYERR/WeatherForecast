@@ -116,15 +116,15 @@ function humidityFinding(data){
     const humidityImg = document.querySelector('.humidity img');
     let humiditySrc;
     if(humidityLevel <= 35){
-        humiditySrc = "../img/medium-humidity.svg";
+        humiditySrc = "./img/medium-humidity.svg";
         humidityDescription.innerText = 'Low Level';
     }
     else if(humidityLevel > 35 && humidityLevel <= 60){
-        humiditySrc = "../img/low-humidity.svg";
+        humiditySrc = "./img/low-humidity.svg";
         humidityDescription.innerText = 'Medium Level';
     }
     else{
-        humiditySrc = "../img/high-humidity.svg";
+        humiditySrc = "./img/high-humidity.svg";
         humidityDescription.innerText = 'High Level';
     }
     humidityImg.src = humiditySrc;
@@ -191,4 +191,3 @@ btn.addEventListener('click',(evt)=>{
 });
 
 
-// Image = https://openweathermap.org/img/wn/50d@2x.png
